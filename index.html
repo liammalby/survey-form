@@ -19,128 +19,164 @@
 
     <!-- 3. Form element with an id of survey-form -->
     <form id="survey-form">
-      <label for="name" id="name-label">Name</label>
-      <input
-        type="text"
-        id="name"
-        name="name"
-        placeholder="Enter your name"
-        required
-      />
+      <div class="enter-name">
+        <label for="name" id="name-label">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
 
-      <label for="email" id="email-label">Email</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Enter your email"
-        pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
-        required
-      />
+      <div class="enter-email">
+        <label for="email" id="email-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
+          required
+        />
+      </div>
 
-      <label for="number" id="number-label">Age (optional)</label>
-      <input
-        type="number"
-        id="number"
-        name="number"
-        min="1"
-        max="130"
-        placeholder="Age"
-      />
+      <div class="enter-number">
+        <label for="number" id="number-label">Age (optional)</label>
+        <input
+          type="number"
+          id="number"
+          name="number"
+          min="1"
+          max="130"
+          placeholder="Age"
+        />
+      </div>
 
-      <label for="dropdown">
-        Which option best describes your current role?
-      </label>
+      <div class="dropdown-options">
+        <label for="dropdown">
+          Which option best describes your current role?
+        </label>
+        <select id="dropdown" name="dropdown">
+          <option value="">Select current role</option>
+          <option value="student">Student</option>
+          <option value="full-time-job">Full Time Job</option>
+          <option value="full-time-learner">Full Time Learner</option>
+          <option value="other">Other</option>
+          <option value="prefer-not-to-say">Prefer Not To Say</option>
+        </select>
+      </div>
 
-      <select id="dropdown" name="dropdown">
-        <option value="">Select current role</option>
-        <option value="student">Student</option>
-        <option value="full-time-job">Full Time Job</option>
-        <option value="full-time-learner">Full Time Learner</option>
-        <option value="other">Other</option>
-        <option value="prefer-not-to-say">Prefer Not To Say</option>
-      </select>
-      <fieldset>
+      <fieldset id="recommend" name="recommend">
         <legend>Would you recommend freeCodeCamp to a friend?</legend>
 
-        <input
-          type="radio"
-          name="recommend"
-          id="recommend-definitely"
-          value="definitely"
-        />
-        <label for="recommend-definitely">Definitely</label>
+        <div class="radio-buttons">
+          <input
+            type="radio"
+            name="recommend"
+            id="recommend-definitely"
+            value="definitely"
+          />
+          <label for="recommend-definitely">Definitely</label>
+        </div>
 
-        <input
-          type="radio"
-          name="recommend"
-          id="recommend-maybe"
-          value="maybe"
-        />
-        <label for="recommend-maybe">Maybe</label>
+        <div class="radio-buttons">
+          <input
+            type="radio"
+            name="recommend"
+            id="recommend-maybe"
+            value="maybe"
+          />
+          <label for="recommend-maybe">Maybe</label>
+        </div>
 
-        <input
-          type="radio"
-          name="recommend"
-          id="recommend-not-sure"
-          value="not-sure"
-        />
-        <label for="recommend-not-sure">Not Sure</label>
+        <div class="radio-buttons">
+          <input
+            type="radio"
+            name="recommend"
+            id="recommend-not-sure"
+            value="not-sure"
+          />
+          <label for="recommend-not-sure">Not Sure</label>
+        </div>
       </fieldset>
 
-      <fieldset name="improvements">
+      <fieldset name="improvements" id="improvements">
         <legend>
           What would you like to see improved? (Check all that apply)
         </legend>
 
-        <input
-          type="checkbox"
-          id="front-end-projects"
-          value="Front End Projects"
-        />
-        <label for="front-end-projects">Front-end Projects</label>
+        <div class="checkbox-buttons">
+          <input
+            type="checkbox"
+            id="front-end-projects"
+            value="Front End Projects"
+          />
+          <label for="front-end-projects">Front-end Projects</label>
+        </div>
 
-        <input
-          type="checkbox"
-          id="back-end-projects"
-          value="Back-end Projects"
-        />
-        <label for="back-end-projects">Back-end Projects</label>
+        <div class="checkbox-buttons">
+          <input
+            type="checkbox"
+            id="back-end-projects"
+            value="Back-end Projects"
+          />
+          <label for="back-end-projects">Back-end Projects</label>
+        </div>
 
-        <input
-          type="checkbox"
-          id="data-visualisation"
-          value="Data Visualisations"
-        />
-        <label for="data-visualisation">Data Visualisations</label>
+        <div class="checkbox-buttons">
+          <input
+            type="checkbox"
+            id="data-visualisation"
+            value="Data Visualisations"
+          />
+          <label for="data-visualisation">Data Visualisations</label>
+        </div>
 
-        <input type="checkbox" id="challenges" value="Challenges" />
-        <label for="challenges">Challenges</label>
+        <div class="checkbox-buttons">
+          <input type="checkbox" id="challenges" value="Challenges" />
+          <label for="challenges">Challenges</label>
+        </div>
 
-        <input type="checkbox" id="open-source" value="open-source" />
-        <label for="open-source">Open Source Community</label>
+        <div class="checkbox-buttons">
+          <input type="checkbox" id="open-source" value="open-source" />
+          <label for="open-source">Open Source Community</label>
+        </div>
 
-        <input type="checkbox" id="gitter-help" value="gitter-help" />
-        <label for="gitter-help">Gitter help rooms</label>
+        <div class="checkbox-buttons">
+          <input type="checkbox" id="gitter-help" value="gitter-help" />
+          <label for="gitter-help">Gitter help rooms</label>
+        </div>
 
-        <input type="checkbox" id="videos" value="videos" />
-        <label for="videos">Videos</label>
+        <div class="checkbox-buttons">
+          <input type="checkbox" id="videos" value="videos" />
+          <label for="videos">Videos</label>
+        </div>
 
-        <input type="checkbox" id="city-meetups" value="city-meetups" />
-        <label for="city-meetups">City Meetups</label>
+        <div class="checkbox-buttons">
+          <input type="checkbox" id="city-meetups" value="city-meetups" />
+          <label for="city-meetups">City Meetups</label>
+        </div>
 
-        <input type="checkbox" id="wiki" value="wiki" />
-        <label for="wiki">Wiki</label>
+        <div class="checkbox-buttons">
+          <input type="checkbox" id="wiki" value="wiki" />
+          <label for="wiki">Wiki</label>
+        </div>
 
-        <input type="checkbox" id="forum" value="forum" />
-        <label for="forum">Forum</label>
+        <div class="checkbox-buttons">
+          <input type="checkbox" id="forum" value="forum" />
+          <label for="forum">Forum</label>
+        </div>
 
-        <input
-          type="checkbox"
-          id="additional-courses"
-          value="additional-courses"
-        />
-        <label for="additional-courses"></label>
+        <div class="checkbox-buttons">
+          <input
+            type="checkbox"
+            id="additional-courses"
+            value="additional-courses"
+          />
+          <label for="additional-courses">Additional Courses</label>
+        </div>
       </fieldset>
 
       <label for="comments">Any comments or suggestions?</label>
@@ -156,4 +192,3 @@
     </form>
   </body>
 </html>
-
