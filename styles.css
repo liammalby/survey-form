@@ -191,8 +191,6 @@ textarea {
   /* font-family: 'Poppins', sans-serif; */
 }
 
-
-
 /* Add the correct box sizing in IE 10. Remove the padding in IE 10. */
 [type='checkbox'],
 [type='radio'] {
@@ -264,9 +262,11 @@ html {
 body {
   width: 100vw;
   margin: 0;
-  background: linear-gradient(to right,
+  background: linear-gradient(
+      to right,
       rgba(13, 27, 42, 1),
-      rgba(27, 38, 59, 0.7)),
+      rgba(27, 38, 59, 0.7)
+    ),
     url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
   background-size: cover;
   background-repeat: no-repeat;
@@ -337,9 +337,11 @@ fieldset {
     #1b263b
   ); */
   border-radius: 20px;
-  background: linear-gradient(225deg,
-      rgba(44, 61, 96, 0.371),
-      rgba(32, 58, 106, 0.7));
+  background: linear-gradient(
+    225deg,
+    rgba(44, 61, 96, 0.371),
+    rgba(32, 58, 106, 0.7)
+  );
   box-shadow: -28px 28px 56px #172032, 28px -28px 56px #1f2c44;
   padding: 1.5rem 1.5rem 1.2rem;
   box-shadow: 2px 16px 73px 13px rgba(13, 27, 42, 0.75);
@@ -419,6 +421,12 @@ fieldset {
 #improvements-legend,
 label[for='comments'] {
   padding-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.radio-buttons > label,
+.checkbox-buttons > label {
+  font-weight: 200;
 }
 
 .enter-name,
@@ -448,3 +456,58 @@ label[for='comments'] {
   color: whitesmoke;
   margin: 0.15rem 0;
 }
+
+#submit {
+  box-shadow: inset 0px 1px 0px 0px #97c4fe;
+  background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+  background-color: #3d94f6;
+  border-radius: 6px;
+  border: 1px solid #337fed;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #1570cd;
+}
+#submit:hover {
+  background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+  background-color: #1e62d0;
+}
+#submit:active {
+  position: relative;
+  top: 1px;
+}
+
+@media screen and (min-width: 576px) {
+  main {
+    width: 23rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  main {
+    width: 26rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  main {
+    width: 30rem;
+  }
+}
+
+/* @media (min-width: 577px) and (max-width: 768px) {
+  .main {
+    width: 22rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
+@media screen and (min-width: 1025px) {
+} */
