@@ -261,11 +261,9 @@ html {
 body {
   width: 100vw;
   margin: 0;
-  background: linear-gradient(
-      to right,
+  background: linear-gradient(to right,
       rgba(13, 27, 42, 1),
-      rgba(27, 38, 59, 0.7)
-    ),
+      rgba(27, 38, 59, 0.7)),
     url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
   background-size: cover;
   background-repeat: no-repeat;
@@ -330,11 +328,9 @@ fieldset {
     #1b263b
   ); */
   border-radius: 50px;
-  background: linear-gradient(
-    225deg,
-    rgb(29, 41, 63, 0.5),
-    rgb(24, 34, 53, 0.7)
-  );
+  background: linear-gradient(225deg,
+      rgb(29, 41, 63, 0.5),
+      rgb(24, 34, 53, 0.7));
   box-shadow: -28px 28px 56px #172032, 28px -28px 56px #1f2c44;
   padding: 1rem 1.5rem 1.2rem;
   box-shadow: 2px 16px 73px 13px rgba(13, 27, 42, 0.75);
@@ -397,5 +393,5 @@ label[for='comments'] {
 
 .radio-buttons,
 .checkbox-buttons {
-  color: red;
+  color: whitesmoke;
 }
